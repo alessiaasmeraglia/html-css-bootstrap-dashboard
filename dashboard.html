@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Libri Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="dashboard.html">
+                    <img src="/img/duck.png" alt="Logo" width="30" height="30">                    
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="#mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Catalogo Libri</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Anagrafica Utenti</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Storico Prestiti</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+                    </ul>
+
+                    <form class="d-none d-lg-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cerca...">
+                    <button class="btn btn-outline-light" type="submit">Cerca</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-4 px-4">
+        
+        
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items gap-3 mb-4">
+                <div>
+                    <h1 class="page-title mb-2">Dashboard Biblioteca</h1>
+                    <p class="page-subtitle mb-0">Panoramica generale e statistiche</p>
+                </div>
+                <div class="d-flex flex-column flex-sm-row gap-2">
+                    <button class="btn btn-light action-btn"><span class="me-2">⌕</span>Cerca Libro</button>
+                    <a href="new-book.html" class="btn btn-primary action-btn">
+                    <span class="me-2">＋</span>Nuovo Libro
+                    </a>
+                </div>
+            </div>
+        
+        
+        <div class="row g-4 mb-4 mb-lg-5">
+            <div class="col-12 col-sm-6 col-xl-3">
+                <div class="stat-card">
+                    <div class="d-flex justify-content-between align-items">
+                        <div>
+                            <p class="stat-label mb-2">Totale Libri</p>
+                            <h2 class="stat-number mb-2">1,245</h2>
+                            <p class="stat-trend trend-positive mb-0">↑ 8.2% <span>vs mese scorso</span></p>
+                        </div>
+                        <div class="stat-icon icon-blue">
+                            <i class="bi bi-book"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3">
+                <div class="stat-card">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <p class="stat-label mb-2">Prestiti Attivi</p>
+                            <h2 class="stat-number mb-2">67</h2>
+                            <p class="stat-trend trend-positive mb-0">↑ 12.5% <span>vs mese scorso</span></p>
+                        </div>
+                        <div class="stat-icon icon-green">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3">
+                <div class="stat-card">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <p class="stat-label mb-2">Utenti Registrati</p>
+                            <h2 class="stat-number mb-2">342</h2>
+                            <p class="stat-trend trend-positive mb-0">↑ 5.3% <span>vs mese scorso</span></p>
+                        </div>
+                        <div class="stat-icon icon-purple">
+                            <i class="bi bi-people"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3">
+                <div class="stat-card">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <p class="stat-label mb-2">Prestiti in Ritardo</p>
+                            <h2 class="stat-number mb-2">8</h2>
+                            <p class="stat-trend trend-negative mb-0">↓ 3.1% <span>vs mese scorso</span></p>
+                        </div>
+                        <div class="stat-icon icon-red">
+                            <i class="bi bi-exclamation-triangle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 align-items-stretch">
+            <div class="col-12 col-lg-8">
+            <div class="dashboard-card h-100">
+                <h3 class="section-title mb-4">Prestiti e Restituzioni</h3>
+                
+                <div class="chart-area">
+                <div class="y-axis"><span>80</span><span>60</span><span>40</span><span>20</span><span>0</span></div>
+                <div class="bars-wrapper">
+                    <div class="grid-lines"><span></span><span></span><span></span><span></span><span></span></div>
+                    <div class="bars">
+                    <div class="bar-item"><div class="bar green" style="height: 45%;"></div><p>Gen</p></div>
+                    <div class="bar-item"><div class="bar green" style="height: 52%;"></div><p>Feb</p></div>
+                    <div class="bar-item"><div class="bar green" style="height: 48%;"></div><p>Mar</p></div>
+                    <div class="bar-item"><div class="bar green" style="height: 61%;"></div><p>Apr</p></div>
+                    <div class="bar-item"><div class="bar green" style="height: 55%;"></div><p>Mag</p></div>
+                    <div class="bar-item"><div class="bar green" style="height: 67%;"></div><p>Giu</p></div>
+                    </div>
+                </div>
+                </div>
+                <div class="legend mt-4"><div class="legend-item"><span class="legend-dot dot-blue"></span>Prestiti</div><div class="legend-item"><span class="legend-dot dot-green"></span>Restituzioni</div></div>
+            </div>
+            </div>
+            <div class="col-12 col-lg-4">
+            <div class="dashboard-card h-100">
+                <h3 class="section-title mb-4">Distribuzione per Genere</h3>
+                
+                <div class="donut-wrap">
+                    <div class="donut-chart"></div>
+                </div>
+                    <div class="row g-2 genre-legend mt-4">
+                    <div class="col-6">
+                        <div class="legend-item small"><span class="legend-dot dot-romance"></span>Romanzo</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="legend-item small"><span class="legend-dot dot-yellow"></span>Giallo</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="legend-item small"><span class="legend-dot dot-cyan"></span>Fantascienza</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="legend-item small"><span class="legend-dot dot-green"></span>Fantasy</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="legend-item small"><span class="legend-dot dot-orange"></span>Saggistica</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="legend-item small"><span class="legend-dot dot-gray"></span>Altri</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
