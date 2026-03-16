@@ -52,35 +52,35 @@
                     <!-- Nome autore -->
                     <div class="col-6 col-md-6">
                         <label for="title" class="form-label fw-semibold">Nome Autore</label>
-                        <input type="text" class="form-control" id="title" placeholder="Inserisci il nome dell'autore">
+                        <input required type="text" class="form-control" id="title" placeholder="Inserisci il nome dell'autore">
                     </div>
                     <!-- Cognome autore -->
                     <div class="col-6 col-md-6">
                         <label for="author" class="form-label fw-semibold">Cognome Autore</label>
-                        <input type="text" class="form-control" id="author" placeholder="Inserisci il cognome dell'autore">
+                        <input required type="text" class="form-control" id="author" placeholder="Inserisci il cognome dell'autore">
                     </div>
                     <!-- Titolo libro -->
                     <div class="col-12">
                         <label for="title" class="form-label fw-semibold">Titolo</label>
-                        <input type="text" class="form-control" id="title" placeholder="Inserisci il titolo del libro">
+                        <input required type="text" class="form-control" id="title" placeholder="Inserisci il titolo del libro">
                         <div class="form-text">Titolo versione italiana</div>
                     </div>
                     <!-- Genere -->
                     <div class="col-12 col-lg-4">
                         <label for="genre" class="form-label fw-semibold">Genere</label>
-                        <select id="genre" class="form-select" aria-label="Scegli il genere">
-                            <option selected disabled>Scegli il genere</option>
-                            <option value="1">Fantasy</option>
-                            <option value="2">Romanzo</option>
-                            <option value="3">Thriller</option>
-                            <option value="4">Horror</option>
-                            <option value="5">Classico</option>
+                        <select required id="genre" class="form-select" aria-label="Scegli il genere">
+                            <option selected disabled value="">Scegli il genere</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="romanzo">Romanzo</option>
+                            <option value="thriller">Thriller</option>
+                            <option value="horror">Horror</option>
+                            <option value="classico">Classico</option>
                         </select>
                     </div>
                     <!-- Anno di pubblicazione -->
                     <div class="col-12 col-lg-4">
                         <label for="year" class="form-label fw-semibold">Anno di pubblicazione</label>
-                        <input type="text" class="form-control" id="year" placeholder="Inserisci l'anno di pubblicazione">
+                        <input required type="text" class="form-control" id="year" placeholder="Inserisci l'anno di pubblicazione">
                     </div>
                     <!-- Codice ISBN-->
                     <div class="col-12 col-lg-4">
